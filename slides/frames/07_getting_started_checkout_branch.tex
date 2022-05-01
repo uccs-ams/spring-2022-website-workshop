@@ -1,0 +1,37 @@
+\begin{frame}[fragile]
+    \frametitle{Getting Started}
+
+    Let's change directories again to the newly-created \texttt{website-workshop} folder:
+   
+    \bigskip
+    
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ cd website-workshop
+    \end{lstlisting}
+
+    \vfill
+
+    The next command we need to run depends on our operating system. We're going to check out slightly different
+    versions of the code to account for operating system differences:
+
+    \medskip
+
+    \begin{block}{Windows}
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ git checkout windows
+    \end{lstlisting}
+    \end{block}
+    
+    \begin{block}{MacOS}
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ git checkout macos
+    \end{lstlisting}
+    \end{block}
+
+    \begin{block}{MacOS [M1]}
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ git checkout macos-arm64
+    \end{lstlisting}
+    \end{block}
+
+\end{frame}

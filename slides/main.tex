@@ -1,6 +1,19 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
+\usepackage{listings}
+
+\lstdefinestyle{saneCode}{
+    belowcaptionskip=1\baselineskip,
+    breaklines=true,
+    frame=none,
+    numbers=none,
+    basicstyle=\scriptsize\ttfamily,
+    % keywordstyle=\bfseries\color{green!40!black},
+    % commentstyle=\itshape\color{purple!40!black},
+    % identifierstyle=\color{blue},
+    backgroundcolor=\color{gray!10!white},
+}
 
 \usetheme{Singapore}
 \usecolortheme{default}
@@ -30,6 +43,9 @@
 \include{frames/02_background.tex}
 \include{frames/03_hugo_introduction.tex}
 \include{frames/04_markdown.tex}
-\include{frames/05_getting_started.tex}
+\include{frames/05_getting_started_open_terminal.tex}
+\include{frames/06_getting_started_clone_repo.tex}
+\include{frames/07_getting_started_checkout_branch.tex}
+\include{frames/08_getting_started_start_hugo.tex}
 
 \end{document}

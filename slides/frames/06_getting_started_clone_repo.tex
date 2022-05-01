@@ -1,0 +1,27 @@
+\begin{frame}[fragile]
+    \frametitle{Getting Started}
+
+    Now we'll change directories (\texttt{cd}) to the \texttt{Desktop} folder.  Type the following into your terminal
+    (\textbf{without} the "\$" character\footnote{
+        It is customary to add this character in technical documentation in order to indicate that the proceeding
+        command is to be entered into a terminal.
+    }), and then hit the \texttt{[Enter]} key:
+   
+    \bigskip
+    
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ cd Desktop
+    \end{lstlisting}
+
+    \vfill
+    Next, we'll use Git to clone (copy) all the necessary code for this project. Copy the following code into your 
+    terminal (note that the entire command should be on a single line!), and then hit the \texttt{[Enter]} key:
+
+    \bigskip
+
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ git clone https://github.com/uccs-ams/website-workshop.git --recurse
+    \end{lstlisting}
+
+
+\end{frame}
