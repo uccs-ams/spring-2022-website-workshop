@@ -1,0 +1,31 @@
+\begin{frame}[fragile]
+    \frametitle{Scaffolding the Website}
+
+    Basic information about your website (title, navigation links, etc.) is contained in the \texttt{config.toml} 
+    configuration file inside the \texttt{website-workshop} folder on our Desktop. Let's open that file in our favorite
+    text editor, and replace the existing content with the following:
+
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        baseURL = 'http://example.org/'
+        languageCode = 'en-us'
+        title = 'Mathy McMathFace'
+        theme = 'researcher'
+        [params]
+          author = "Mathy McMathFace"
+          [params.footer]
+            text = "By Mathy McMathFace"
+          [[params.socialIcons]]
+            icon = "fas fa-envelope"
+            title = "E-mail"
+            url = "mailto:mail@example.com"
+        
+        [permalinks]
+          "/" = "/:filename"
+        
+        [menu]
+          [[menu.main]]
+            name = "Contact"
+            url = "/contact"
+            weight = 1
+    \end{lstlisting}
+\end{frame}

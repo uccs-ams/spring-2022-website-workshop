@@ -2,3 +2,4 @@ public/
 *.lock
 
 out/
+resources/_gen/
