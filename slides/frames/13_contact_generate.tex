@@ -1,0 +1,30 @@
+\begin{frame}[fragile]
+    \frametitle{Contact Page}
+
+    Now that the world knows who we are, let's create a contact page so that they know how to reach us.
+    Like before, we'll use Hugo to generate a new page:
+
+    \medskip
+
+    \begin{lstlisting}[style=saneCode,gobble=6]
+      ./hugo new contact.md
+    \end{lstlisting}
+
+    \vfill
+
+    We also need to add a link to this page from our index page. We can add links to pages by modifying our 
+    \texttt{config.toml} configuration file, just like we did before for our resume:
+
+    \begin{lstlisting}[style=saneCode,gobble=6,title={config.toml},numbers=left,firstnumber=7]
+      ...
+      [menu]
+        [[menu.main]]
+          name = "Resume"
+          url = "/resume.pdf"
+          weight = 1
+        [[menu.main]]
+          name = "Contact"
+          url = "/contact"
+          weight = 2
+    \end{lstlisting}
+\end{frame}

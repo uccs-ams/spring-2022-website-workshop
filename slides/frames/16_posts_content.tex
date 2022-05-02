@@ -1,0 +1,25 @@
+\begin{frame}[fragile]
+    \frametitle{Posts}
+
+    We've seen up to this point that Markdown provides some pretty basic formatting out of the box.
+    What if we want \LaTeX \: in our blog posts?
+
+    \begin{lstlisting}[style=saneCode,gobble=8,title={content/hello-world.md},numbers=left]
+        ---
+        title: "Hello World"
+        date: 2022-05-01T15:58:31-06:00
+        draft: true
+        math: true
+        ---
+
+        # Hello, world!
+
+        This is my first blog post. In my post, I can do things like:
+
+        - Make lists
+        - _Emphasize_ text
+        - Make text **bold**
+        - Show off some inline \LaTeX
+    \end{lstlisting}
+
+\end{frame}

@@ -1,0 +1,23 @@
+\begin{frame}[fragile]
+    \frametitle{Website Scaffolding}
+
+    Basic information about our website (title, theme, website URL, etc.) is contained in the \texttt{config.toml} 
+    configuration file inside the \texttt{website-workshop} folder on our Desktop. 
+    
+    \medskip
+
+    Let's open that file with a
+    text editor and replace the existing content with the following to enable the \texttt{researcher} Hugo theme:
+
+    \bigskip
+
+    \begin{lstlisting}[style=saneCode,gobble=8,title={config.toml},numbers=left]
+        baseURL = "http://example.org/"
+        title = "Mathy McMathFace"
+        theme = "researcher"
+    \end{lstlisting}
+
+    \vfill
+
+    We're going to add a few more things to this file before we're done.
+\end{frame}

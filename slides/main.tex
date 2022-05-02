@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage{listings}
 
+
 \lstdefinestyle{saneCode}{
     belowcaptionskip=1\baselineskip,
     breaklines=true,
@@ -10,9 +11,12 @@
     numbers=none,
     basicstyle=\tiny\ttfamily,
     % keywordstyle=\bfseries\color{green!40!black},
-    % commentstyle=\itshape\color{purple!40!black},
+    commentstyle=\itshape\color{purple!40!black},
     % identifierstyle=\color{blue},
     backgroundcolor=\color{gray!10!white},
+    keepspaces,
+    upquote=true,
+    showstringspaces=false,
 }
 
 \usetheme{Singapore}
@@ -47,6 +51,13 @@
 \include{frames/06_getting_started_clone_repo.tex}
 \include{frames/07_getting_started_checkout_branch.tex}
 \include{frames/08_getting_started_start_hugo.tex}
-\include{frames/09_scaffolding.tex}
+\include{frames/09_scaffolding_metadata.tex}
+\include{frames/10_scaffolding_navigation.tex}
+\include{frames/11_index_generate.tex}
+\include{frames/12_index_content.tex}
+\include{frames/13_contact_generate.tex}
+\include{frames/14_contact_content.tex}
+\include{frames/15_posts_generate.tex}
+\include{frames/16_posts_content.tex}
 
 \end{document}

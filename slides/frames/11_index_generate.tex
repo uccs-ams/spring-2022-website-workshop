@@ -1,0 +1,33 @@
+\begin{frame}[fragile]
+    \frametitle{Main Page}
+
+    Our \textbf{index} (main) page is looking pretty barren - let's change that! Our first task is to create a new 
+    Markdown file for Hugo to turn into a webpage, and we'll use Hugo to do so.    
+
+    \smallskip
+
+    Open a new terminal, and then run the following command to navigate to our project directory:
+
+    \medskip
+
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ cd Desktop/website-workshop
+    \end{lstlisting}
+
+    \vfill
+
+    From here, we'll instruct Hugo to generate a new Markdown file for us to modify:\footnote{
+      The \texttt{\_index.md} file name holds special significance in Hugo projects; the contents of this file are
+      rendered to the main page.
+    }
+
+    \medskip
+
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ ./hugo new _index.md
+    \end{lstlisting}
+
+    \smallskip
+
+    This command generates a new Markdown file at \texttt{website-workshop/content/\_index.md}.
+\end{frame}
