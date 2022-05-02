@@ -1,0 +1,31 @@
+\begin{frame}[fragile]
+    \frametitle{Posts Page}
+
+    We can also use Hugo to easily create and manage blog posts:
+
+    \medskip
+
+    \begin{lstlisting}[style=saneCode,gobble=8]
+        $ ./hugo new posts/hello-world.md
+    \end{lstlisting}
+
+    \vfill
+    As before, we'll add a link to our new \texttt{Posts} page:
+
+    \begin{lstlisting}[style=saneCode,gobble=6,title={config.toml},numbers=left,firstnumber=8]
+      ...
+      [menu]
+        [[menu.main]]
+          name = "Resume"
+          url = "/resume.pdf"
+          weight = 1
+        [[menu.main]]
+          name = "Contact"
+          url = "/contact"
+          weight = 2
+        [[menu.main]]
+          name = "Posts"
+          url = "/posts"
+          weight = 3
+    \end{lstlisting}
+\end{frame}

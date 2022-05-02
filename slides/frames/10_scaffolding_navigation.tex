@@ -1,7 +1,8 @@
 \begin{frame}[fragile]
     \frametitle{Website Scaffolding}
 
-    Now we'll update some basic page properties. This includes a navigation link to our resume and a page footer.
+    Now we'll update some basic page properties. This includes a navigation link to our resume (located at 
+    \texttt{content/resume.pdf}) and a page footer.
 
     \bigskip
     
@@ -10,9 +11,10 @@
     \medskip
 
     \begin{lstlisting}[style=saneCode,gobble=8,title={config.toml [ctd.]},numbers=left,firstnumber=4]
+        
         [params]
           [params.footer]
-            text = 'By Mathy McMathFace'
+            text = 'Copyright 2022 Mathy McMathFace'
         
         [menu]
           [[menu.main]]
