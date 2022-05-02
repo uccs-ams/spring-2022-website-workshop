@@ -6,14 +6,17 @@
 
     \bigskip
 
-    To do so, we simply run the following from our terminal:
+    To convert our markdown files into a website, we simply run the following command in our terminal:\footnote{
+        The \texttt{-D} flag instructs Hugo to include Markdown files with \texttt{draft: true} in their header in
+        the final compiled website.
+    }
 
     \smallskip
 
     \begin{lstlisting}[style=saneCode,gobble=8]
-        $ ./hugo
+        $ ./hugo -D
     \end{lstlisting}
 
     \bigskip
-    Our compiled websites files can then be found in the \texttt{public} folder in our project directory.
+    The compiled website files can then be found in the \texttt{public} folder in our project directory.
 \end{frame}
