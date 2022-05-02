@@ -1,16 +1,18 @@
 \begin{frame}[fragile]
     \frametitle{Website Scaffolding}
 
-    Now we'll update some basic page properties. This includes a navigation link to our resume (located at 
-    \texttt{content/resume.pdf}) and a page footer.
+    Now we'll add a footer and a link to our CV to our website by adding a handful of lines to our \texttt{config.toml} 
+    file.\footnote{
+      The file we're linking to in this workshop can be found at \texttt{content/cv.pdf}.
+    } 
 
     \bigskip
     
     Be sure to pay attention to spacing!
 
-    \medskip
+    \smallskip
 
-    \begin{lstlisting}[style=saneCode,gobble=8,title={config.toml [ctd.]},numbers=left,firstnumber=4]
+    \begin{lstlisting}[style=saneCode,gobble=8,title={config.toml},numbers=left,firstnumber=4]
         
         [params]
           [params.footer]
@@ -18,12 +20,13 @@
         
         [menu]
           [[menu.main]]
-            name = "Resume"
-            url = "/resume.pdf"
+            name = "Curriculum Vitae"
+            url = "/cv.pdf"
             weight = 1
     \end{lstlisting}
 
-    \vfill
+    \smallskip
 
     Let's see what our website looks like so far.
+    \vfill
 \end{frame}
